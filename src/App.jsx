@@ -29,7 +29,7 @@ function App() {
                 </ul>
             </nav>
 
-           
+            {/* Theme Toggle Button */}
             <button className="theme-toggle" onClick={toggleTheme}>
                 <img src={isDarkMode ? MoonIcon : SunIcon} alt="Toggle Theme" />
             </button>
@@ -37,15 +37,22 @@ function App() {
             <header>
                 <h1>Welcome to My Portfolio</h1>
             </header>
-            <div className='hello'>
-                <div className='div1'>
+            <div className='div1'>
+                <div className='div1-div1'>
 
                 </div>
-                <div className='div2'>
+                <div className='div1-div2'>
                     
                 </div>
             </div>
+            <div className='div3'>
+
+            </div>
+            <div className='div4'>
+
+            </div>
         </div>
+        
         
         
     );
