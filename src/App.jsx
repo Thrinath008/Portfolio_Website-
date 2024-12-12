@@ -29,7 +29,7 @@ function App() {
                 </ul>
             </nav>
 
-            {/* Theme Toggle Button */}
+           
             <button className="theme-toggle" onClick={toggleTheme}>
                 <img src={isDarkMode ? MoonIcon : SunIcon} alt="Toggle Theme" />
             </button>
