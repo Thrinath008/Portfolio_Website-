@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: rgb(141, 144, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.2s ease;
+}
+
+nav:hover {
+    width: 120px;
+}
+.nav-item {
+    margin: 20px 0; /* Increased vertical spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.nav-item img:hover {
+    transform: scale(1.5);
+}
+
+body.light-mode .nav-item img {
+    filter: invert(1); /* Inverts the color of SVGs/icons to black for light mode */
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-toggle img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.theme-toggle:hover img {
+    transform: scale(1.2);
+}
+
+body.light-mode .theme-toggle img {
+    filter: invert(1); /* Ensures moon/sun icons are visible in both modes */
+}
+.hello{
+    
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.div1{
+    height: 120px;
+    width: 140px;
+    background-color: aqua;
+    border-radius: 20px;
+    margin-right: 20px;
+
+}
+.div2{
+    height: 120px;
+    width: 140px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-left: 20px;
+
+}
