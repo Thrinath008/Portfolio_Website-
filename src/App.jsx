@@ -4,6 +4,7 @@ import MoonIcon from './assets/moon.svg';
 import SunIcon from './assets/sun.svg';
 import LinkedInIcon from './assets/linkedin.svg';
 import HomeIcon from './assets/home.svg';
+import GitgubIcon from './assets/github.svg'
 
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -24,6 +25,11 @@ function App() {
                     <li className="nav-item">
                         <a href="https://linkedin.com/in/saragada-thrinath-01a6b7283" target="_blank" rel="noopener noreferrer">
                             <img src={LinkedInIcon} alt="LinkedIn" />
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a href='https://github.com/Thrinath008' target="_blank" rel="noopener noreferrer">
+                            <img src={GitgubIcon} alt="github"/>
                         </a>
                     </li>
                 </ul>
