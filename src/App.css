@@ -4,19 +4,37 @@ html, body {
     height: 100%;
     background-color: black;
     color: white;
-}
-
-body.light-mode {
+  }
+  
+  body.light-mode {
+    background-color: rgb(224, 244, 255);
+    color: black;
+  }
+  
+  /* Light mode overrides for the divs */
+  body.light-mode .div1 {
+    background-color:rgb(135, 196, 255);
+  }
+  
+  body.light-mode .div3 {
+    background-color: lightgreen;
+  }
+  
+  body.light-mode .div4 {
+    background-color: lightblue;
+  }
+  
+  body.light-mode .div1-div2 {
     background-color: white;
     color: black;
-}
-
-header {
+  }
+  
+  header {
     padding: 1rem;
     text-align: center;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -24,87 +42,103 @@ nav ul {
     align-items: center;
     padding: 0;
     margin: 0;
-}
-
-nav li {
+  }
+  
+  nav li {
     margin: 0 1rem;
     cursor: pointer;
-}
-
-nav {
+  }
+  
+  nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 60px;
     height: 100%;
-    background-color: rgb(141, 144, 227);
+    background-color: rgb(255, 238, 217);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: width 0.2s ease;
-}
-
-nav:hover {
+  }
+  
+  nav:hover {
     width: 120px;
-}
-.nav-item {
-    margin: 20px 0; /* Increased vertical spacing */
+  }
+  
+  .nav-item {
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.nav-item img {
+  }
+  
+  .nav-item img {
     width: 30px;
     height: 30px;
     transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.nav-item img:hover {
+  }
+  
+  .nav-item img:hover {
     transform: scale(1.5);
-}
-
-body.light-mode .nav-item img {
-    filter: invert(1); /* Inverts the color of SVGs/icons to black for light mode */
-}
-
-.theme-toggle {
+  }
+  
+  body.light-mode .nav-item img {
+    filter: invert(1);
+  }
+  
+  .theme-toggle {
     position: fixed;
     bottom: 10px;
     right: 10px;
     background: none;
     border: none;
     cursor: pointer;
-}
-
-.theme-toggle img {
+  }
+  
+  .theme-toggle img {
     width: 32px;
     height: 32px;
     transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.theme-toggle:hover img {
+  }
+  
+  .theme-toggle:hover img {
     transform: scale(1.2);
-}
-
-body.light-mode .theme-toggle img {
-    filter: invert(1); /* Ensures moon/sun icons are visible in both modes */
-}
-.div1{
-    
+  }
+  
+  body.light-mode .theme-toggle img {
+    filter: invert(1);
+  }
+  
+  .div1 {
     height: 500px;
     align-items: center;
     justify-content: center;
-    display: block;
-    background-color: coral;
-
-}
-.div3{
+    display: flex;
+    background-color: rgb(57, 167, 255);
+  }
+  
+  .div3 {
     background-color: chartreuse;
     height: 500px;
-}
-.div4{
+  }
+  
+  .div4 {
     background-color: aliceblue;
     height: 500px;
-}
+  }
+  
+  .div1-div1 {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .div1-div2 {  
+    background-color: aliceblue;
+    height: 200px;
+    width: 200px;
+    color: black;
+    justify-content: center;
+  }
+  
